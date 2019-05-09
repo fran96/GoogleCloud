@@ -1,0 +1,76 @@
+﻿@model IEnumerable<Common.Property>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+@Html.Partial("_NotificationsPartial")
+<p>
+    @Html.ActionLink("Post a property", "Create")
+</p>
+
+
+<form method="post" action="\property\DeleteItems">
+    <table class="table">
+        <tr>
+            <th></th>
+            <th><input type="submit" value="Delete" /></th>
+            <th>
+                @Html.DisplayNameFor(model => model.PropertyPicture)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Description)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Price)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Location)
+            </th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+        <tr>
+            @if (item.Username == User.Identity.Name.Substring(0, User.Identity.Name.IndexOf("@")))
+            {
+                <td><input type="checkbox" value="@item.Id" name="items" /></td>
+            }
+            else
+            {
+                <td></td>
+            }
+            @if (item.Username != User.Identity.Name.Substring(0, User.Identity.Name.IndexOf("@")))
+            {
+                <td>
+                    <input type="button" value="Register Interest" onclick="location.href='@Url.Action("PubSub", "Property", new {id = item.Id})'" />
+                </td>
+            }
+            else
+            {
+                <td></td>
+            }
+            <td>
+                <img style="width:200px;height:200px" src="https://storage-download.googleapis.com/programmingcloud/@Html.DisplayFor(modelItem => item.PropertyPicture)" alt="a description of the image">
+            </td>
+            <td style="line-height:15">
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td style="line-height:15">
+                @Html.DisplayFor(modelItem => item.Description)
+            </td>
+            <td style="line-height:15">
+                @Html.DisplayFor(modelItem => item.Price)
+            </td>
+            <td style="line-height:15">
+                @Html.DisplayFor(modelItem => item.Location)
+            </td>
+        </tr>
+        }
+
+    </table>
+</form>

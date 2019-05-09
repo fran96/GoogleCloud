@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="DefaultConnection-Web.config Connection String" description="DefaultConnection Connection String used in web.config by the application to access the database." defaultValue="Data Source=(LocalDb)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\aspnet-CloudWebApp-20190212103105.mdf;Initial Catalog=aspnet-CloudWebApp-20190212103105;Integrated Security=True" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\Fran\\Documents\\Bsc\\3BSC\\SecondSemester\\cloudprogramming\\Assignment\\Code\\CloudWebApp\\Website\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='DefaultConnection']/@connectionString" />
+  </parameter>
+  <parameter name="postgresConnection-Web.config Connection String" description="postgresConnection Connection String used in web.config by the application to access the database." defaultValue="Server=35.184.164.199;Port=5432;Database=postgres;User Id=postgres;Password=pass123;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\Fran\\Documents\\Bsc\\3BSC\\SecondSemester\\cloudprogramming\\Assignment\\Code\\CloudWebApp\\Website\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='postgresConnection']/@connectionString" />
+  </parameter>
+</parameters>

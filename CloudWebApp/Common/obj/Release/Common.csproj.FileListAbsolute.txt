@@ -1,0 +1,6 @@
+C:\Users\Fran\Documents\Bsc\3BSC\SecondSemester\cloudprogramming\Assignment\Code\CloudWebApp\Common\bin\Release\Common.dll
+C:\Users\Fran\Documents\Bsc\3BSC\SecondSemester\cloudprogramming\Assignment\Code\CloudWebApp\Common\bin\Release\Common.pdb
+C:\Users\Fran\Documents\Bsc\3BSC\SecondSemester\cloudprogramming\Assignment\Code\CloudWebApp\Common\obj\Release\Common.csprojAssemblyReference.cache
+C:\Users\Fran\Documents\Bsc\3BSC\SecondSemester\cloudprogramming\Assignment\Code\CloudWebApp\Common\obj\Release\Common.csproj.CoreCompileInputs.cache
+C:\Users\Fran\Documents\Bsc\3BSC\SecondSemester\cloudprogramming\Assignment\Code\CloudWebApp\Common\obj\Release\Common.dll
+C:\Users\Fran\Documents\Bsc\3BSC\SecondSemester\cloudprogramming\Assignment\Code\CloudWebApp\Common\obj\Release\Common.pdb
